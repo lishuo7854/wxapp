@@ -63,10 +63,10 @@ style="height:100%">
     <block wx:for="{{restaurant}}" wx:key="">
       <navigator url="/pages/menu/menu">
         <view class="restaurants-list">
-          <view class="restaurants-info-image">
-            <image src="{{item.src}}" class="restaurants-image"/>
+          <view class="restaurants-info-image" >
+            <!-- <image src="{{item.src}}" class="restaurants-image"/> -->
           </view>
-          <view class="restaurants-info">
+          <view class="restaurants-info" style='margin-left:10px;'>
             <view class="restaurants-info-name">{{item.name}}</view>
             <view class="restaurants-info-rating">
               <view

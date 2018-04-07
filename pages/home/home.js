@@ -226,6 +226,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    wx.request({
+      url: "http://127.0.0.1:8000/homelist/?table=Job&tableClass=JobSerializer",
+      method: "GET",
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+         homeList:res.data
+        })
+      }
+    });
+
+
     
   },
 

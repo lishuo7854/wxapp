@@ -75,36 +75,43 @@ style="height:100%">
   <view class="header-title">附近商家</view>
   <template is="sort_list" data="{{selected,sortSelected,index,array}}"/>
     <view class="restaurantsList">
-    <block wx:for="{{restaurant}}" wx:key="">
+
+
+
+    <block wx:for="{{homeList}}" wx:for-item="item" wx:key="">
       <navigator url="/pages/menu/menu">
         <view class="restaurants-list">
           <view class="restaurants-info-image">
-            <image src="{{item.src}}" class="restaurants-image"/>
+            <!-- <image src="{{item.src}}" class="restaurants-image"/> -->
           </view>
-          <view class="restaurants-info">
-            <view class="restaurants-info-name">{{item.name}}</view>
+          <view class="restaurants-info" style='margin-left:10px;'>
+            <view class="restaurants-info-name">{{item['name']}}</view>
             <view class="restaurants-info-rating">
               <view
-              class="restaurants-info-rating-stars">★ ★ ★ ★</view>
+              class="restaurants-info-rating-stars"> {{item['paymethod']}}</view>
               <view 
-              class="restaurants-info-rating-sales">月售 {{item.sales}}单</view>
+              class="restaurants-info-rating-sales"> {{item['paymethod']}}</view>
             </view>
             <view class="restaurants-info-price">
-              起送 {{item.initial_price}}¥ | 配送 {{item.distribution_price}}¥
+              {{item['jobdate']}} | {{item['address']}}
             </view>
         </view>
         <view class="restaurants-distribution">
           <view 
-          class="restaurants-distribution-distance">
-            {{item.distance}}
+          class="restaurants-distribution-distance" style='color:red;font-size:13px;'>
+             {{item['treatment']}}/ {{item['treatmentType']}}
           </view>
           <view 
           class="restaurants-distribution-time">
-            {{item.time}} 分钟
+            {{ item['Merchant'] }}
           </view>
         </view>
        </view>
       </navigator>
     </block>
+
+
+
+
   </view>
 </scroll-view>
