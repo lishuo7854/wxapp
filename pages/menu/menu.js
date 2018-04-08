@@ -6,14 +6,11 @@ Page({
    */
   data: {
     swiperTitle: [{
-      text: "点菜",
+      text: "职位详情",
       id: 1
     },{
-      text: "评价",
+      text: "商家信息",
       id: 2
-    },{
-      text: "商家",
-      id: 3
     }],
     menu:[],
     currentPage: 0,
@@ -70,8 +67,14 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: "https://www.easy-mock.com/mock/596257bc9adc231f357c4664/restaurant/menu",
+      url: "http://127.0.0.1:8000/jobdetails",
       method: "GET",
+      data: {
+        jobid: options.jobid,
+        MerchantId: options.Merchantid,
+        table:"Job",
+        tableClass:"JobSerializer"
+      },
       success: function (res) {
         that.setData({
           menu: res.data,

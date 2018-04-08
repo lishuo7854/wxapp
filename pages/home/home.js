@@ -255,7 +255,7 @@ Page({
   onShow: function () {
     var that = this;
     wx.request({
-      url: "https://www.easy-mock.com/mock/596257bc9adc231f357c4664/restaurant/info",
+      url: "",
       method: "GET",
       success: function (res) {
         that.setData({
@@ -306,4 +306,5 @@ Page({
       index: e.detail.value
     })
   },
+
 })

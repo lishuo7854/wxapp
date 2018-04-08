@@ -79,13 +79,13 @@ style="height:100%">
 
 
     <block wx:for="{{homeList}}" wx:for-item="item" wx:key="">
-      <navigator url="/pages/menu/menu">
-        <view class="restaurants-list">
+      <navigator url="/pages/menu/menu?jobid={{item['id']}}&Merchantid={{item['MerchantId']}}">
+        <view class="restaurants-list"  bindtap="redirectToMenu" data-id="{{ item['id']}}" data-mid="{{item['MerchantId']}}">
           <view class="restaurants-info-image">
             <!-- <image src="{{item.src}}" class="restaurants-image"/> -->
           </view>
           <view class="restaurants-info" style='margin-left:10px;'>
-            <view class="restaurants-info-name">{{item['name']}}</view>
+            <view class="restaurants-info-name">{{item['name']}}  {{item['MerchantId']}}</view>
             <view class="restaurants-info-rating">
               <view
               class="restaurants-info-rating-stars"> {{item['paymethod']}}</view>

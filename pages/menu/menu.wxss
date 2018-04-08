@@ -1,3 +1,42 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 518032 */
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*本项目使用的18个图标  */
+.icon-zhiding:before{content: '\e739';}
+.icon-zuojiantou:before{content: '\e736';}
+.icon-youjiantou:before{content: '\e735';}
+.icon-shangjiantou:before{content: '\e734';}
+.icon-xiajiantou1:before{content: '\e733';}
+.icon-xiajiantou:before{content: '\e6cc';}
+.icon-gengduotianchong:before{content: '\e67f';}
+.icon-erweima:before{content: '\e65f';}
+.icon-fenleiorguangchangorqita:before{content: '\e64f';}
+.icon-dibiao:before{content: '\e64d';}
+.icon-bangzhu:before{content: '\e64a';}
+.icon-xinfeng:before{content: '\e640';}
+.icon-duihuaxinxi:before{content: '\e639';}
+.icon-sousuo:before{content: '\e62f';}
+.icon-shouye:before{content: '\e62d';}
+.icon-shezhi:before{content: '\e62a';}
+.icon-shanchu:before{content: '\e629';}
+.icon-dianhua:before{content: '\e61b';}
+.icon-ali{
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: -10px;
+}
 .container{
   height: 100%;
 }
@@ -252,4 +291,69 @@
   border: 1px solid #ECECEC;
   border-radius: 40rpx;
   padding: 5rpx 15rpx;
+}
+
+.menu-main{
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+   border-bottom: 0.1px solid #F3EEEE; 
+  /* margin-bottom: 0.5px;
+  margin-bottom: 1px; */
+  
+}
+.menu-main-top{
+  padding-top: 18px;
+}
+.menu-main-title{
+  font-size: 18px;
+  margin-left: 15px;
+  
+}
+.menu-main-price{
+  float: right;
+  margin-right: 15px;
+  font-size: 14px;
+  color: red;
+}
+.menu-main-category{
+    font-size: 14px;
+  margin-left: 15px;
+  color: #505050;
+}
+
+.menu-list{
+height: 33px;
+color: #000000;
+}
+
+.menu-contant{
+  background-color: #fff;
+  margin-top: 10px;
+}
+.menu-contants{
+  padding: 10px;
+  background-color: #fff;
+  height:auto;
+  font-size:14px;
+  margin-bottom: 100px;
+}
+ .busines-img-name{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+} 
+.info-bisiness{
+  padding: 15px;
+  
+}
+.info-business-title{
+  font-size: 16px;
+}
+.info-business-list{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.item-key{
+  color: red;
 }

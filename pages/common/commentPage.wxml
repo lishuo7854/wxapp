@@ -1,22 +1,47 @@
 <template name="commentPage">
-<view class="commentPage-header">
-  <view class="commentPage-score">
-    <view class="overall">综合评分</view>
-    4.3
-    <view class="rate">商家综合好评率为76%</view>
+<scroll-view scroll-y="true" style='height: 100%;'>
+  <view style='width:100%;'>
+    <image style="width: 100%; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="../images/shangjia.jpg"></image>
   </view>
-  <view class="commentPage-rating">
-    <view class="restaurant">商家评分
-      <view class="stars">★★★★★ 4</view>
+
+  <view class='busines-img-name'>
+    <text>商家</text>
+  </view>
+  <view class='busines-img-name'>
+    <image src="../images/shangjiarenz.png" style='height:15px;width:75px;'></image>
+  </view>
+
+  <view class='info-bisiness'>
+    <text class='info-business-title'>基本信息</text>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>行业</text>　　人力资源</text>
     </view>
-    <view class="distribute">配送评分
-      <view class="stars">★★★★★ 4.6</view>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>规模</text>　　人力资源</text>
     </view>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>地址</text>　　人力资源</text>
     </view>
-</view>
-<view class="commentPage-category">
-  <block wx:for="{{categoryList}}" wx:key="">
-    <view class="category-item">{{item.text}}({{item.numb}})</view>
-  </block>
-</view>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>负责人</text>　　人力资源</text>
+    </view>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>负责人</text>　　人力资源</text>
+    </view>
+    <view class='info-business-list'>
+      <text class='info-business-item'><text class='item-key'>联系电话</text>　　人力资源</text>
+    </view>
+  </view>
+
+
+    <view class='info-bisiness'>
+    <text class='info-business-title'>公司简介</text>
+    <view class='info-business-list'>
+      <text class='info-business-item'>人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源人力资源</text>
+    </view>
+
+  </view>
+
+
+</scroll-view>
 </template>
