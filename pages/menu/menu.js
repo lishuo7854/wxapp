@@ -74,6 +74,7 @@ Page({
         MerchantId: options.Merchantid,
       },
       success: function (res) {
+        console.log(res.data)
         that.setData({
           menu: res.data,
         })

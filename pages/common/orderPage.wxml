@@ -1,10 +1,8 @@
 <template name="orderPage">
-    
-
 <scroll-view class="foodList" style="height: 100%;" scroll-y="true" >
 <view class='menu-main'> 
 <view class='menu-main-top'>
-    <text class='menu-main-title'>招聘优惠卷代理</text>
+    <text class='menu-main-title'>{{menu[0]['id']}}</text>
     <text class='menu-main-price'>200元/天</text>
 </view>
     <text class='menu-main-category'>宅家赚钱/200人/日结</text>
