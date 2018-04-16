@@ -72,8 +72,6 @@ Page({
       data: {
         jobid: options.jobid,
         MerchantId: options.Merchantid,
-        table:"Job",
-        tableClass:"JobSerializer"
       },
       success: function (res) {
         that.setData({
